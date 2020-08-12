@@ -200,7 +200,7 @@ public class BarcodeScanner extends CordovaPlugin {
                         if (obj.has(SHOW_TAKE_FROM_GALLERY_BUTTON)) {
                             System.out.println("@@@@@@@@@");
                             System.out.println(obj);
-                            intentScan.putExtra(Intents.Scan.SHOW_TAKE_FROM_GALLERY_BUTTON, obj.optBoolean(obj.showTakeFromGalleryButton));
+                            intentScan.putExtra(Intents.Scan.SHOW_TAKE_FROM_GALLERY_BUTTON, obj.optBoolean(SHOW_TAKE_FROM_GALLERY_BUTTON, false));
                         }
                     }
 
