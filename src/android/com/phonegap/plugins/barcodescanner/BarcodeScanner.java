@@ -198,9 +198,28 @@ public class BarcodeScanner extends CordovaPlugin {
                         System.out.println("@@@@@@@@@");
                         System.out.println(obj);
                         if (obj.has(SHOW_TAKE_FROM_GALLERY_BUTTON)) {
-                            System.out.println("@@@@@@@@@");
-                            System.out.println(obj);
                             intentScan.putExtra(Intents.Scan.SHOW_TAKE_FROM_GALLERY_BUTTON, obj.optBoolean(SHOW_TAKE_FROM_GALLERY_BUTTON, false));
+                        }
+                        if (obj.has(PROMPT_MESSAGE_TEXT_COLOR)) {
+                            intentScan.putExtra(Intents.Scan.PROMPT_MESSAGE_TEXT_COLOR, obj.optString(PROMPT_MESSAGE_TEXT_COLOR));
+                        }
+                        if (obj.has(TAKE_FROM_GALLERY_BUTTON_TEXT)) {
+                            intentScan.putExtra(Intents.Scan.TAKE_FROM_GALLERY_BUTTON_TEXT, obj.optString(TAKE_FROM_GALLERY_BUTTON_TEXT));
+                        }
+                        if (obj.has(TAKE_FROM_GALLERY_BUTTON_COLOR)) {
+                            intentScan.putExtra(Intents.Scan.TAKE_FROM_GALLERY_BUTTON_COLOR, obj.optString(TAKE_FROM_GALLERY_BUTTON_COLOR));
+                        }
+                        if (obj.has(TAKE_FROM_GALLERY_BUTTON_TEXT_COLOR)) {
+                            intentScan.putExtra(Intents.Scan.TAKE_FROM_GALLERY_BUTTON_TEXT_COLOR, obj.optString(TAKE_FROM_GALLERY_BUTTON_TEXT_COLOR));
+                        }
+                        if (obj.has(BORDER_COLOR)) {
+                            intentScan.putExtra(Intents.Scan.BORDER_COLOR, obj.optString(BORDER_COLOR));
+                        }
+                        if (obj.has(BORDER_LINE_LENGTH)) {
+                            intentScan.putExtra(Intents.Scan.BORDER_LINE_LENGTH, obj.optInteger(BORDER_LINE_LENGTH));
+                        }
+                        if (obj.has(BORDER_STROKE_WIDTH)) {
+                            intentScan.putExtra(Intents.Scan.BORDER_STROKE_WIDTH, obj.optInteger(BORDER_STROKE_WIDTH));
                         }
                     }
 
