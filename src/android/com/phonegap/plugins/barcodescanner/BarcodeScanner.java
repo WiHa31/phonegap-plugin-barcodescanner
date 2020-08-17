@@ -47,6 +47,13 @@ public class BarcodeScanner extends CordovaPlugin {
     private static final String ORIENTATION = "orientation";
     private static final String SHOW_FLIP_CAMERA_BUTTON = "showFlipCameraButton";
     private static final String SHOW_TAKE_FROM_GALLERY_BUTTON = "showTakeFromGalleryButton";
+    private static final String PROMPT_MESSAGE_TEXT_COLOR = "promptMessageTextColor";
+    private static final String TAKE_FROM_GALLERY_BUTTON_TEXT = "takeFromGalleryButtonText";
+    private static final String TAKE_FROM_GALLERY_BUTTON_COLOR = "takeFromGalleryButtonColor";
+    private static final String TAKE_FROM_GALLERY_BUTTON_TEXT_COLOR = "takeFromGalleryButtonTextColor";
+    private static final String BORDER_COLOR = "borderColor";
+    private static final String BORDER_LINE_LENGTH = "borderLineLength";
+    private static final String BORDER_STROKE_WIDTH = "borderStrokeWidth";
     private static final String RESULTDISPLAY_DURATION = "resultDisplayDuration";
     private static final String SHOW_TORCH_BUTTON = "showTorchButton";
     private static final String TORCH_ON = "torchOn";
