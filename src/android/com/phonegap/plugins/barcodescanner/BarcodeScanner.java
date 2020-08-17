@@ -223,10 +223,10 @@ public class BarcodeScanner extends CordovaPlugin {
                             intentScan.putExtra(Intents.Scan.BORDER_COLOR, obj.optString(BORDER_COLOR));
                         }
                         if (obj.has(BORDER_LINE_LENGTH)) {
-                            intentScan.putExtra(Intents.Scan.BORDER_LINE_LENGTH, obj.optInteger(BORDER_LINE_LENGTH));
+                            intentScan.putExtra(Intents.Scan.BORDER_LINE_LENGTH, obj.optInt(BORDER_LINE_LENGTH));
                         }
                         if (obj.has(BORDER_STROKE_WIDTH)) {
-                            intentScan.putExtra(Intents.Scan.BORDER_STROKE_WIDTH, obj.optInteger(BORDER_STROKE_WIDTH));
+                            intentScan.putExtra(Intents.Scan.BORDER_STROKE_WIDTH, obj.optInt(BORDER_STROKE_WIDTH));
                         }
                     }
 
